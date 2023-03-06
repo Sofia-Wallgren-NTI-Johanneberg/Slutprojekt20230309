@@ -6,7 +6,8 @@ Ditt sista uppdrag i kursen är att skapa en komplett webb- plats för dagens kr
 ## Tekniska krav
 - Inlämnad idéförklaring inkl. planering av din tid
 - Vanilla JS alt. jQuery
-- CSS ( grid + flexbox, mediaquery etc ) ev. Bootstrap 
+- CSS ( grid + flexbox, mediaquery etc ) ev. Bootstrap
+- Git Versionshantering via ert Githubkonto 
 
 ## Presentation
 Utöver produkt ska även en __kort presentation på ca 5 minuter__ hållas där du redogör för vilka beslut du tagit gällande *innehåll*, *utseende* och *funktion*. Jag vill inte veta
@@ -37,3 +38,4 @@ VAD du har gjort utan VARFÖR du har gjort dem.
 |Analys|När arbetet är utfört gör du en ____ dokumentation av de moment som har utförts ____ samt utvärderar med _____ omdömen ditt arbete och resultat. ____|enkel / - / enkla / -|noggrann / - / nyanserade /  I utvärderingen resonerar du kring eventuella avvikelser samt motiverar översiktligt de val som har gjorts.|noggrann och utförlig / med koppling till generella principer och testresultat / utförliga och nyanserade / samt ger förslag på hur arbetet kan förbättras. I utvärderingen resonerar du kring eventuella avvikelser samt motiverar utförligt de val som har gjorts.|
 
 ## Inlämning sker via Classroom **senast torsdag 11 Maj*
+## Där klipper ni in eran GitHub-länk till ert repo för ert projekt. PS Glöm ej att göra ert repo Public 
