@@ -1,0 +1,58 @@
+#forst {
+    display: block;
+}
+
+#recept {
+    display: none;
+}
+
+#odling {
+    display: none;
+}
+
+#bokrekommendationer {
+    display: none;
+}
+
+#sy {
+    display: none;
+}
+
+#musik {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#lista {
+    display: grid;
+    grid-template-areas: 
+    'head head'
+    're od'
+    'bok bok'
+    'sty mus'
+}
+
+
+#re {
+    grid-area: re;
+}
+
+#od {
+    grid-area: od;
+}
+
+#bok {
+    grid-area: bok;
+}
+
+#sty {
+    grid-area: sty;
+}
+
+#mus {
+    grid-area: mus;
+}
