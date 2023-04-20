@@ -19,50 +19,206 @@
             <p id="bocker">Bokrekommendationer</p>
             <p id="sys">Sy</p>
             <p id="music">Musik</p>
+
+            <!-- <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+                <li>Five</li>
+            </ul> -->
         </nav>
         <main id="forst" class="klick">
-            <section>
-                <h1>TITEL</h1>
+            <section class="huvud">
+                <h1 style="font-size:10vw;">HÅLLBART LIV</h1>
             </section>
             <div id="lista">
-                <section id="re">
+                <section id="re" class="ordnat">
                     <h3>RECEPT</h3>
+                    <img class="klickbarBild" src="images/veganMat.jpg" alt="">
+                    <p>Se hur du kan laga mat med säsongens grödor. All mat är vegansk och många av ingredienserna kan du odla själv!</p>
                 </section>
-                <section id="od">
+                <section id="od" class="ordnat">
                     <h3>ODLING</h3>
+                    <img class="klickbarBild" src="images/odling.jpg" alt="">
+                    <p>Ett sätt att garanterat leva mer hållbart är att odla sina egna grödor. Detta kommer göra att du enkelt blir mer självständig samt får hälsofördelarna av ekologisk och närodlad mat. Du vet ju exakt vilka kemikalier som varit på!</p>
                 </section>
-                <section id="bok">
+                <section id="bok" class="ordnat">
                     <h3>BOK</h3>
+                    <img class="klickbarBildBred" src="images/annelies-geneyn-bhBONc07WsI-unsplash.jpg" alt="">
+                    <p>vi alla behöver koppla av någon gång ibland. Då kan en härlig bok som får en att må bra vara rätt sätt att slappna av. Här kan du se de bästa bokrekomendationerna för just dig och din livsstil!</p>
                 </section>
-                <section id="sty">
+                <section id="sty" class="ordnat">
                     <h3>SY</h3>
+                    <img class="klickbarBild" src="images/merylove-art-zWWDco7uCu0-unsplash.jpg" alt="">
+                    <p>Se hur du kan laga mat med säsongens grödor. All mat är vegansk och många av ingredienserna kan du odla själv!</p>
                 </section>
-                <section id="mus">
+                <section id="mus" class="ordnat">
                     <h3>MUSIK</h3>
+                    <img class="klickbarBild" src="images/brett-jordan-x3wDxZJx9qs-unsplash.jpg" alt="">
+                    <p>Se hur du kan laga mat med säsongens grödor. All mat är vegansk och många av ingredienserna kan du odla själv!</p>
                 </section>
             </div>
         </main>
 
         <main id="recept" class="klick">
-            <section>
-                <h1>RECEPT</h1>
+            <section class="huvud">
+                <h1 style="font-size:10vw;">RECEPT</h1>
             </section>
             <div>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
+                <section id="receptmeny">
+                    <div class="dropdown">
+                        <h3 class="recepttitel" data-toggle="dropdown">GRÖN SALLAD <i class="icon-arrow"></i></h3>
+                        <ul class="dropdown-menu">
+                            <div class="ettRecept">
+                                <aside class="ingredienser">
+                                    <h4>Ingredienser</h4>
+                                    <ul>
+                                        <li>1 mogen avocado</li>
+                                        <li>1 burk kikärtor</li>
+                                        <li>2 msk olivolja</li>
+                                        <li>2 vitlöksklyftor, rivna</li>
+                                        <li>1 msk paprikapulver</li>
+                                        <li>1 tomat</li>
+                                        <li>1/2 burk majs</li>
+                                        <li>1/2 paprika</li>
+                                    </ul>
+                                </aside>
+                                <aside class="saharGorDu">
+                                    <h4>Såhär gör du</h4>
+                                    <ol>
+                                        <li>Sätt ugnen på 200 grader</li>
+                                        <li>Skölj kikärtirna i kallt vatten, spara acuafaban till en smarrig vegansk kladdkaka!</li>
+                                        <li>Torka dem och sprid ut jämnt på en bakplåtspappersklädd plåt. Blanda olivolja, vitlök och paprikapulver i en liten skål och häll över kikärtirna</li>
+                                        <li>In i ugnen i ca 10 minuter, eller tills kikärtorna börjar poppa. Ta därefter ut dem och häll på ytterligare lite paprikapulver på de varma kikärtorna</li>
+                                        <li>Tärna avocadon, tomaten och paprikan i små kuber och häll i en bunke. Häll över majs och blanda runt</li>
+                                        <li>Vänd ner kikärtorna med all olja i bunken och blanda runt. Servera med färsk citronklyfta, och färsk hackad koriander. Passar perfekt som kall matlåda!</li>
+                                    </ol>
+                                </aside>
+                                <img class="receptBild" src="images/veganMat.jpg" alt="">
+                            </div>
+                        </ul>
+                    </div>  
+                    <div class="dropdown">
+                        <h3 class="recepttitel" data-toggle="dropdown">CHAMPINJON- OCH TOFUFÄRS <i class="icon-arrow"></i></h3>
+                        <ul class="dropdown-menu">
+                            <div class="ettRecept">
+                                <aside class="ingredienser">
+                                    <h4>Ingredienser</h4>
+                                    <ul>
+                                        <li>1 mogen avocado</li>
+                                        <li>1 burk kikärtor</li>
+                                        <li>2 msk olivolja</li>
+                                        <li>2 vitlöksklyftor, rivna</li>
+                                        <li>1 msk paprikapulver</li>
+                                        <li>1 tomat</li>
+                                        <li>1/2 burk majs</li>
+                                        <li>1/2 paprika</li>
+                                    </ul>
+                                </aside>
+                                <aside class="saharGorDu">
+                                    <h4>Såhär gör du</h4>
+                                    <ol>
+                                        <li>Sätt ugnen på 200 grader</li>
+                                        <li>Skölj kikärtirna i kallt vatten, spara acuafaban till en smarrig vegansk kladdkaka!</li>
+                                        <li>Torka dem och sprid ut jämnt på en bakplåtspappersklädd plåt. Blanda olivolja, vitlök och paprikapulver i en liten skål och häll över kikärtirna</li>
+                                        <li>In i ugnen i ca 10 minuter, eller tills kikärtorna börjar poppa. Ta därefter ut dem och häll på ytterligare lite paprikapulver på de varma kikärtorna</li>
+                                        <li>Tärna avocadon, tomaten och paprikan i små kuber och häll i en bunke. Häll över majs och blanda runt</li>
+                                        <li>Vänd ner kikärtorna med all olja i bunken och blanda runt. Servera med färsk citronklyfta, och färsk hackad koriander. Passar perfekt som kall matlåda!</li>
+                                    </ol>
+                                </aside>
+                                <img class="receptBild" src="images/veganMat.jpg" alt="">
+                            </div>
+                        </ul>
+                    </div>   
+                    <div class="dropdown">
+                        <h3 class="recepttitel" data-toggle="dropdown">ÄPPLEPAJ <i class="icon-arrow"></i></h3>
+                        <ul class="dropdown-menu">
+                            <div>pannkaka</div>
+                        </ul>
+                    </div>      
+                    <div class="dropdown">
+                        <h3 class="recepttitel" data-toggle="dropdown"> BÄRIG SMOOTHIE <i class="icon-arrow"></i></h3>
+                        <ul class="dropdown-menu">
+                            <div class="ettRecept">
+                                <aside class="ingredienser">
+                                    <h4>Ingredienser</h4>
+                                    <ul>
+                                        <li>1 mogen avocado</li>
+                                        <li>1 burk kikärtor</li>
+                                        <li>2 msk olivolja</li>
+                                        <li>2 vitlöksklyftor, rivna</li>
+                                        <li>1 msk paprikapulver</li>
+                                        <li>1 tomat</li>
+                                        <li>1/2 burk majs</li>
+                                        <li>1/2 paprika</li>
+                                    </ul>
+                                </aside>
+                                <aside class="saharGorDu">
+                                    <h4>Såhär gör du</h4>
+                                    <ol>
+                                        <li>Sätt ugnen på 200 grader</li>
+                                        <li>Skölj kikärtirna i kallt vatten, spara acuafaban till en smarrig vegansk kladdkaka!</li>
+                                        <li>Torka dem och sprid ut jämnt på en bakplåtspappersklädd plåt. Blanda olivolja, vitlök och paprikapulver i en liten skål och häll över kikärtirna</li>
+                                        <li>In i ugnen i ca 10 minuter, eller tills kikärtorna börjar poppa. Ta därefter ut dem och häll på ytterligare lite paprikapulver på de varma kikärtorna</li>
+                                        <li>Tärna avocadon, tomaten och paprikan i små kuber och häll i en bunke. Häll över majs och blanda runt</li>
+                                        <li>Vänd ner kikärtorna med all olja i bunken och blanda runt. Servera med färsk citronklyfta, och färsk hackad koriander. Passar perfekt som kall matlåda!</li>
+                                    </ol>
+                                </aside>
+                                <img class="receptBild" src="images/veganMat.jpg" alt="">
+                            </div>
+                        </ul>
+                    </div>   
+                    <div class="dropdown">
+                        <h3 class="recepttitel" data-toggle="dropdown">MASKROSTE <i class="icon-arrow"></i></h3>
+                        <ul class="dropdown-menu">
+                            <div class="ettRecept">
+                                <aside class="ingredienser">
+                                    <h4>Ingredienser</h4>
+                                    <ul>
+                                        <li>1 mogen avocado</li>
+                                        <li>1 burk kikärtor</li>
+                                        <li>2 msk olivolja</li>
+                                        <li>2 vitlöksklyftor, rivna</li>
+                                        <li>1 msk paprikapulver</li>
+                                        <li>1 tomat</li>
+                                        <li>1/2 burk majs</li>
+                                        <li>1/2 paprika</li>
+                                    </ul>
+                                </aside>
+                                <aside class="saharGorDu">
+                                    <h4>Såhär gör du</h4>
+                                    <ol>
+                                        <li>Sätt ugnen på 200 grader</li>
+                                        <li>Skölj kikärtirna i kallt vatten, spara acuafaban till en smarrig vegansk kladdkaka!</li>
+                                        <li>Torka dem och sprid ut jämnt på en bakplåtspappersklädd plåt. Blanda olivolja, vitlök och paprikapulver i en liten skål och häll över kikärtirna</li>
+                                        <li>In i ugnen i ca 10 minuter, eller tills kikärtorna börjar poppa. Ta därefter ut dem och häll på ytterligare lite paprikapulver på de varma kikärtorna</li>
+                                        <li>Tärna avocadon, tomaten och paprikan i små kuber och häll i en bunke. Häll över majs och blanda runt</li>
+                                        <li>Vänd ner kikärtorna med all olja i bunken och blanda runt. Servera med färsk citronklyfta, och färsk hackad koriander. Passar perfekt som kall matlåda!</li>
+                                    </ol>
+                                </aside>
+                                <img class="receptBild" src="images/veganMat.jpg" alt="">
+                            </div>
+                        </ul>
+                    </div>                 
+                </section>
             </div>
         </main>
 
 
         <main id="odling" class="klick">
-            <section>
-                <h1>ODLING</h1>
+            <section class="huvud">
+                <h1 style="font-size:10vw;">ODLING</h1>
             </section>
             <div>
-                <section></section>
+                <section id="jord">
+                    <h4>Preppa jorden</h4>
+
+                </section>
                 <section></section>
                 <section></section>
                 <section></section>
@@ -73,8 +229,8 @@
 
 
         <main id="bokrekommendationer" class="klick">
-            <section>
-                <h1>BOKREKOMMENDATIONER</h1>
+            <section class="huvud">
+                <h1 style="font-size:6vw;">BOKREKOMMENDATIONER</h1>
             </section>
             <div>
                 <section></section>
@@ -87,8 +243,8 @@
 
 
         <main id="sy" class="klick">
-            <section>
-                <h1>SY</h1>
+            <section class="huvud">
+                <h1 style="font-size:10vw;">SY</h1>
             </section>
             <div>
                 <section></section>
@@ -101,8 +257,8 @@
 
 
         <main id="musik" class="klick">
-            <section>
-                <h1>MUSIK</h1>
+            <section class="huvud">
+                <h1 style="font-size:10vw;">MUSIK</h1>
             </section>
             <div>
                 <section></section>
@@ -114,13 +270,26 @@
         </main>
 
         <footer>
-            <div>
+            <div class="socialaMedier">
                 <h3>About us</h3>
             </div>
-            <div>
-                <p>Twitter</p>
-                <p>Facebook</p>
-                <p>Instagram</p>
+            <div class="socialaMedier">
+                <div id="twitter">
+                    <p>Twitter</p>
+                    <img class="iconer" src="images/twitter.svg" alt="">
+                </div>
+                <div id="facebook">
+                    <p>Facebook</p>
+                    <img class="iconer" src="images/facebook.svg" alt="">
+                </div>
+                <div id="instagram">
+                    <p>Instagram</p>
+                    <img class="iconer" src="images/instagram.svg" alt="">
+                </div>
+                <div id="pinterest">
+                    <p>Pinterest</p>
+                    <img class="iconer" src="images/pinterest.svg" alt="">
+                </div>
             </div>
         </footer>
     </div>

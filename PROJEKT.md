@@ -40,7 +40,7 @@ Slutfixar
 Idag har jag planerat alla sidorna som kommer att finnas på mimn hemsida. Jag har ritat upp och satt ut vilka olika block jag kommer använda för att få sidan att bli som jag vill. Planeringen är också responsiv vilket gör att den kommer vara anpassad för mobilen. Nästa gång ska jag börja koda lite och försöka hitta lite bra bilder. 
 
 ### v. 11 ###
-
+Denna veckan har jag börjat koda och fixat js för att byta flik smidigt genom att inte behöva ladda in alla sidor mer än 1 gång. Det blir endast en funktion som kör "display: none" på alla som inte är synliga. Glömde fixa bilder men ska nog göra det nästa veckan
 
 ### v. 12 ###
 
