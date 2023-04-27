@@ -250,24 +250,10 @@ h3 {
 
 .ingredienser {
     grid-area: in;
-    width: 80%;
-    height: fit-content;
-    margin: 2rem;
-    background-color: antiquewhite;
-    padding: 1rem;
-    border-radius: 2rem;
-    opacity: 90%;
 }
 
 .saharGorDu {
     grid-area: sgd;
-    width: 80%;
-    height: fit-content;
-    margin: 2rem;
-    background-color: antiquewhite;
-    padding: 1rem;
-    border-radius: 2rem;
-    opacity: 90%;
 }
 
 .receptBild {
@@ -284,6 +270,98 @@ h3 {
 }
 
 
+#jord {
+    background-image: url(images/avinash-kumar-rEIDzqczN7s-unsplash.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.preppajord {
+    display: grid;
+    column-width: 50% 50%;
+    grid-template-areas: 
+    'tt tt'
+    'b1 vbd'
+    'hgd b2'
+}
+
+#tt {
+    grid-area: tt;
+    display: flex;
+    justify-content: center;
+    padding: 0vw 20vw 0vw 20vw;
+}
+
+#b1 {
+    grid-area: b1;
+}
+
+#b2 {
+    grid-area: b2;
+}
+
+#vbd {
+    grid-area: vbd;
+}
+
+#hgd {
+    grid-area: hgd;
+}
+
+#vbd, #hgd {
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: x-large;
+    margin: 1rem;
+}
+
+#b1, #b2 {
+    width: 35vw;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.saharGorDu, .ingredienser, .preppajord, .fron {
+    width: 80%;
+    height: fit-content;
+    margin: 2rem;
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 2rem;
+    opacity: 90%;
+}
+
+h4 {
+    font-size: 5vw;
+}
+
+h5 {
+    font-size: 3vw;
+}
+
+.fron {
+    display: grid;
+    font-size: x-large;
+    grid-template-areas: 
+    'sd fs'
+}
+
+#sd {
+    border: 5px;
+    border-color: black;
+}
+
+.fron div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -304,6 +382,26 @@ h3 {
         'in'
         'sgd'
         'rb'
+    }
+
+    .preppajord {
+        width: 80vw;
+        grid-template-areas: 
+        'tt'
+        'b1'
+        'vbd'
+        'b2'
+        'hgd'
+    }
+
+    .fron {
+        grid-template-areas: 
+        'sd'
+        'fs'
+    }
+
+    #b1, #b2, #hgd, #vbd {
+        width: 75vw;
     }
 
     .recepttitel {
