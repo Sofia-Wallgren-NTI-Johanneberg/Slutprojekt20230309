@@ -43,22 +43,29 @@ Idag har jag planerat alla sidorna som kommer att finnas på mimn hemsida. Jag h
 Denna veckan har jag börjat koda och fixat js för att byta flik smidigt genom att inte behöva ladda in alla sidor mer än 1 gång. Det blir endast en funktion som kör "display: none" på alla som inte är synliga. Glömde fixa bilder men ska nog göra det nästa veckan
 
 ### v. 12 ###
-
+Titel
 
 ### v. 13 ###
-
+Idag har jag fixat hela recept-sidan. Jag har lagt i symboler som animeras när man klickar ner receptflikarna samt lagt in recept på alla sidor.
 
 ### v. 14 ###
-
+LOv
 
 ### v. 15 ###
-
+LOOV
 
 ### v. 16 ###
-
+Denna vecka har jag fixat responsivitet på alla sidor änsålänge och börjatlägga in lite kod för en hamburgermeny
 
 ### v. 17 ###
-
+Denna veckan har jag fixat odling-sidan och gjort den responsiv
 
 ### v. 18 ###
+Denna vecka har jag fixat hela bokrekomendationsidan samt gjort den responsiv för mobilanvändare. Jag missade helt att göra klar min hamburgermeny från 2 veckor sen så kommer göra den hemma under veckan. 
+
+#### Att göra hemma: ####
+Fixa bilderna rätt storlekar
+Småfix så att det ser bra ut med responsivitet. 
+Fixa hamburgermeny (redan börjat)
+Fixa fina fonts till alla sidor
 

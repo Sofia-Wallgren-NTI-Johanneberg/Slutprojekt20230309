@@ -67,4 +67,23 @@ Element.prototype.hasClass = function(className) {
     return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
 };
 
-  
+getRandomCatFacts()
+
+function getRandomCatFacts() {
+
+    fetch("https://catfact.ninja/fact")
+        .then(function (response) {
+            return response.json();
+        })
+        .then((response) => {
+            let cat = response;
+            console.log(cat);
+            document.querySelector('.apin').innerHTML =  cat.fact;
+        })
+        .catch(function (err) {
+            console.log('Error: ' + err);
+            document.querySelector(".api").innerHTML =
+                "😿 " + "Sorry, vi kan inte hämta data just nu. Försök senare!" + " 😿";
+     
+        });
+}

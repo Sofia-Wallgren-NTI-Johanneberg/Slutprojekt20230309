@@ -363,6 +363,67 @@ h5 {
     align-items: center;
 }
 
+#bok1, #bok2, #bok3, #bok4, .api {
+    width: 80%;
+    height: fit-content;
+    margin: 5% 10% 5% 10%;
+    background-color: antiquewhite;
+    border-radius: 2rem;
+    opacity: 90%;
+    display: grid;
+    grid-template-areas: 
+    'bild txt'
+}
+
+.bokbild {
+    grid-area: bild;
+    width: 100%;
+    margin: 15%;
+    border-radius: 0.5rem;
+    
+}
+
+.text {
+    grid-area: txt;
+    margin: 10%;
+    padding-left: 15px;
+}
+
+.api {
+    font-size: 300%;
+    grid-area: api;
+    height: auto;
+}
+
+.api p {
+    margin: 10%;
+}
+
+.bookrecs {
+    background-image: url(images/annelies-geneyn-bhBONc07WsI-unsplash.jpg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'bok1 api'
+    'bok2 api'
+    'bok3 bok4'
+}
+
+#bok1 {
+    grid-area: bok1;
+}
+
+#bok2 {
+    grid-area: bok2;
+}
+
+#bok3 {
+    grid-area: bok3;
+}
+
+#bok4 {
+    grid-area: bok4;
+}
 
 @media only screen and (max-width: 600px) {
     #lista {
@@ -398,6 +459,16 @@ h5 {
         grid-template-areas: 
         'sd'
         'fs'
+    }
+
+    .bookrecs {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'api'
+        'bok1'
+        'bok2'
+        'bok3'
+        'bok4'
     }
 
     #b1, #b2, #hgd, #vbd {
