@@ -78,12 +78,39 @@ function getRandomCatFacts() {
         .then((response) => {
             let cat = response;
             console.log(cat);
-            document.querySelector('.apin').innerHTML =  cat.fact;
+            document.querySelector('.apin').innerHTML =  "Booklovers fact of the day: " + cat.fact;
         })
         .catch(function (err) {
             console.log('Error: ' + err);
             document.querySelector(".api").innerHTML =
-                "😿 " + "Sorry, vi kan inte hämta data just nu. Försök senare!" + " 😿";
+                "Sorry, vi kan inte hämta data just nu. Försök senare!"
      
         });
 }
+
+
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach( 
+  function(menuItem) { 
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)

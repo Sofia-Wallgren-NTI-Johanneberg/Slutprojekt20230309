@@ -7,7 +7,7 @@
 
 header {
     height: 50vh;
-    background-image: url(images/henry-be-IicyiaPYGGI-unsplash.jpg);
+    background-image: url(images/blommor.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -17,18 +17,22 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 10vh;
-    background-image: url(https://images.unsplash.com/photo-1528459061998-56fd57ad86e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=370&q=80);
+    background-image: url(images/footerbild.jpg);
     background-size: cover;
     color: rgb(255, 255, 255);
 }
 
+.lank:hover {
+    cursor: pointer;
+    color: grey;
+}
 
 footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 3%;
-    background-image: url(https://images.unsplash.com/photo-1528459061998-56fd57ad86e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=370&q=80);
+    background-image: url(images/footerbild.jpg);
     background-size: cover;
     color: rgb(0, 0, 0);
 }
@@ -49,7 +53,7 @@ footer {
 
 #forst {
     display: block;
-    background-image: url(images/goutham-krishna-h5wvMCdOV3w-unsplash.jpg);
+    background-image: url(images/bakgrundsbild.jpg);
     background-size: cover;
     background-position: top;
     height: auto;
@@ -128,10 +132,12 @@ footer {
 h1 {
     font-size: 500%;
     margin: 1%;
+    font-family: 'Instrument Serif', serif;
 }
 
 h3 {
     font-size: 200%;
+    font-family: 'Instrument Serif', serif;
 }
 
 .iconer {
@@ -162,7 +168,7 @@ h3 {
     background: #6f6202;
 }
 
-.dropdown .icon-arrow {
+.icon-arrow {
     position: absolute;
     display: block;
     font-size: 0.7em;
@@ -171,7 +177,7 @@ h3 {
     right: 10px;
 }
 
-.dropdown .icon-arrow.open {
+.icon-arrow.open {
     -moz-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
     -webkit-transform: rotate(-180deg);
@@ -182,7 +188,7 @@ h3 {
     transition: transform 0.6s;
 }
 
-.dropdown .icon-arrow.close {
+.icon-arrow.close {
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
@@ -193,11 +199,11 @@ h3 {
     transition: transform 0.6s;
 }
 
-.dropdown .icon-arrow:before {
+.icon-arrow:before {
     content: "\25BC";
 }
 
-.dropdown .dropdown-menu {
+.dropdown-menu {
     max-height: 0;
     overflow: hidden;
     list-style: none;
@@ -205,14 +211,14 @@ h3 {
     margin: 0;
 }
   
-.dropdown .show, .dropdown .hide {
+.show, .hide {
     -moz-transform-origin: 50% 0%;
     -ms-transform-origin: 50% 0%;
     -webkit-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
 }
 
-.dropdown .show {
+.show {
     display: block;
     max-height: 9999px;
     animation: showAnimation 0.5s ease-in-out;
@@ -224,7 +230,7 @@ h3 {
     transition: max-height 1s ease-in-out;
 }
 
-.dropdown .hide {
+.hide {
     max-height: 0;
     animation: hideAnimation 0.4s ease-out;
     -moz-animation: hideAnimation 0.4s ease-out;
@@ -240,7 +246,8 @@ h3 {
 }
 
 .ettRecept {
-    background-image: url(images/veganMat.jpg);
+    background-image: url(images/matbakgrund.jpg);
+    background-size: cover;
     display: grid;
     grid-column: 1fr 1fr;
     grid-template-areas:
@@ -336,12 +343,16 @@ h3 {
     opacity: 90%;
 }
 
+
+
 h4 {
     font-size: 5vw;
+    font-family: 'Instrument Serif', serif;
 }
 
 h5 {
     font-size: 3vw;
+    font-family: 'Instrument Serif', serif;
 }
 
 .fron {
@@ -399,8 +410,12 @@ h5 {
     margin: 10%;
 }
 
+p {
+    font-family: 'Mulish', sans-serif;
+}
+
 .bookrecs {
-    background-image: url(images/annelies-geneyn-bhBONc07WsI-unsplash.jpg);
+    background-image: url(images/bokbild0.jpg);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -425,7 +440,20 @@ h5 {
     grid-area: bok4;
 }
 
+.menu {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
+
+    nav {
+        display: none;
+    }
+
     #lista {
         grid-template-areas: 
         'head'
@@ -479,7 +507,48 @@ h5 {
         font-size: 25px;
     }
 
+    .recepttitel:hover {
+        cursor: pointer;
+    }
+
     #bokrekommendationer h1, #forst h1 {
         font-size: 200%;
+    }
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        border: black solid 1px;
+        background: blanchedalmond;
+        cursor: pointer;
+    }
+
+    .closeIcon {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background-image: url(images/footerbild.jpg);
+        background-size: cover;
+        color: white;
+        list-style: none;
+        padding-top: 4rem;
+    }
+
+    .showMenu {
+        transform: translateY(0);
     }
 }

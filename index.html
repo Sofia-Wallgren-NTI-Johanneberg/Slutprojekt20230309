@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <title>Hållbart liv</title>
 </head>
 <body>
     <div>
@@ -13,25 +18,27 @@
             <!-- logga-->
         </header>
         <nav>
-            <p id="mainen">första</p>
-            <p id="mat">Recept</p>
-            <p id="vaxter">Odling</p>
-            <p id="bocker">Bokrekommendationer</p>
-            <p id="sys">Sy</p>
-            <p id="music">Musik</p>
-
-            <!-- <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-                <div class='menu-button'></div>
-            </label>
-            <ul class="menu">
-                <li>One</li>
-                <li>Two</li>
-                <li>Three</li>
-                <li>Four</li>
-                <li>Five</li>
-            </ul> -->
+            <p id="mainen" class="lank">Hem</p>
+            <p id="mat" class="lank">Recept</p>
+            <p id="vaxter" class="lank">Odling</p>
+            <p id="bocker" class="lank">Bokrekommendationer</p>
+            <!--<p id="sys" class="lank">Sy</p>
+            <p id="music" class="lank">Musik</p> -->
         </nav>
+        <div>
+            <ul class="menu">
+                <p id="mainen" class="lank">Hem</p>
+                <p id="mat" class="lank">Recept</p>
+                <p id="vaxter" class="lank">Odling</p>
+                <p id="bocker" class="lank">Bokrekommendationer</p>
+                <p id="sys" class="lank">Sy</p>
+                <p id="music" class="lank">Musik</p>
+            </ul>
+            <button class="hamburger">
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+            </button>
+        </div>
         <main id="forst" class="klick">
             <section class="huvud">
                 <h1 style="font-size:10vw;">HÅLLBART LIV</h1>
@@ -44,22 +51,22 @@
                 </section>
                 <section id="od" class="ordnat">
                     <h3>ODLING</h3>
-                    <img class="klickbarBild" src="images/odling.jpg" alt="">
+                    <img class="klickbarBild" src="images/odlingny.jpg" alt="">
                     <p>Ett sätt att garanterat leva mer hållbart är att odla sina egna grödor. Detta kommer göra att du enkelt blir mer självständig samt får hälsofördelarna av ekologisk och närodlad mat. Du vet ju exakt vilka kemikalier som varit på!</p>
                 </section>
                 <section id="bok" class="ordnat">
-                    <h3>BOK</h3>
-                    <img class="klickbarBildBred" src="images/annelies-geneyn-bhBONc07WsI-unsplash.jpg" alt="">
+                    <h3>BOKREKOMMENDATIONER</h3>
+                    <img class="klickbarBildBred" src="images/bokbild0.jpg" alt="">
                     <p>vi alla behöver koppla av någon gång ibland. Då kan en härlig bok som får en att må bra vara rätt sätt att slappna av. Här kan du se de bästa bokrekomendationerna för just dig och din livsstil!</p>
                 </section>
                 <section id="sty" class="ordnat">
-                    <h3>SY</h3>
-                    <img class="klickbarBild" src="images/merylove-art-zWWDco7uCu0-unsplash.jpg" alt="">
+                    <h3>SY (COMING SOON)</h3>
+                    <img class="klickbarBild" src="images/sysaker.jpg" alt="">
                     <p>Se hur du kan laga mat med säsongens grödor. All mat är vegansk och många av ingredienserna kan du odla själv!</p>
                 </section>
                 <section id="mus" class="ordnat">
-                    <h3>MUSIK</h3>
-                    <img class="klickbarBild" src="images/brett-jordan-x3wDxZJx9qs-unsplash.jpg" alt="">
+                    <h3>MUSIK (COMING SOON)</h3>
+                    <img class="klickbarBild" src="images/musikbild.jpg" alt="">
                     <p>Se hur du kan laga mat med säsongens grödor. All mat är vegansk och många av ingredienserna kan du odla själv!</p>
                 </section>
             </div>
@@ -138,7 +145,33 @@
                     <div class="dropdown">
                         <h3 class="recepttitel" data-toggle="dropdown">ÄPPLEPAJ <i class="icon-arrow"></i></h3>
                         <ul class="dropdown-menu">
-                            <div>pannkaka</div>
+                            <div class="ettRecept">
+                                <aside class="ingredienser">
+                                    <h4>Ingredienser</h4>
+                                    <ul>
+                                        <li>1 mogen avocado</li>
+                                        <li>1 burk kikärtor</li>
+                                        <li>2 msk olivolja</li>
+                                        <li>2 vitlöksklyftor, rivna</li>
+                                        <li>1 msk paprikapulver</li>
+                                        <li>1 tomat</li>
+                                        <li>1/2 burk majs</li>
+                                        <li>1/2 paprika</li>
+                                    </ul>
+                                </aside>
+                                <aside class="saharGorDu">
+                                    <h4>Såhär gör du</h4>
+                                    <ol>
+                                        <li>Sätt ugnen på 200 grader</li>
+                                        <li>Skölj kikärtirna i kallt vatten, spara acuafaban till en smarrig vegansk kladdkaka!</li>
+                                        <li>Torka dem och sprid ut jämnt på en bakplåtspappersklädd plåt. Blanda olivolja, vitlök och paprikapulver i en liten skål och häll över kikärtirna</li>
+                                        <li>In i ugnen i ca 10 minuter, eller tills kikärtorna börjar poppa. Ta därefter ut dem och häll på ytterligare lite paprikapulver på de varma kikärtorna</li>
+                                        <li>Tärna avocadon, tomaten och paprikan i små kuber och häll i en bunke. Häll över majs och blanda runt</li>
+                                        <li>Vänd ner kikärtorna med all olja i bunken och blanda runt. Servera med färsk citronklyfta, och färsk hackad koriander. Passar perfekt som kall matlåda!</li>
+                                    </ol>
+                                </aside>
+                                <img class="receptBild" src="images/veganMat.jpg" alt="">
+                            </div>
                         </ul>
                     </div>      
                     <div class="dropdown">
@@ -343,7 +376,7 @@
 
         <footer>
             <div class="socialaMedier">
-                <h3>About us</h3>
+                <h3>About us (coming soon)</h3>
             </div>
             <div class="socialaMedier">
                 <div id="twitter">
